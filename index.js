@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 export function generateQRCode(search, callback) {
   let api = `https://api.qrserver.com/v1/create-qr-code/?&data=${search}`;
 

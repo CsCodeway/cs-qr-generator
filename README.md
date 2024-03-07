@@ -3,9 +3,9 @@ Example:-
 ```
 import { generateQRCode } from "cs-qr-generator";
 
-const data = "google.com";
+const search = "google.com";
 
-generateQRCode(data, (error, qrCodeURL) => {
+generateQRCode(search, (error, qrCodeURL) => {
     if (error) {
         console.error('Error generating QR code:', error);
     } else {
