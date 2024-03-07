@@ -9,8 +9,13 @@ export function generateQRCode(search, callback) {
       return response.arrayBuffer();
     })
     .then((buffer) => {
-      const imageData = Buffer.from(buffer).toString("base64");
-      callback(null, imageData);
+      const base64ImageData = btoa(
+        new Uint8Array(buffer).reduce(
+          (data, byte) => data + String.fromCharCode(byte),
+          ''
+        )
+      );
+      callback(null, base64ImageData);
     })
     .catch((error) => {
       callback(error, null);
