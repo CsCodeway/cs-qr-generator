@@ -1,20 +1,20 @@
-import https from 'https';
+import fetch from 'node-fetch';
 
 export function generateQRCode(search, callback) {
-    let api = `https://api.qrserver.com/v1/create-qr-code/?&data=${search}`;
+  let api = `https://api.qrserver.com/v1/create-qr-code/?&data=${search}`;
 
-    https.get(api, (response) => {
-        let imageData = Buffer.alloc(0);
-
-        response.on('data', (chunk) => {
-            imageData = Buffer.concat([imageData, chunk]);
-        });
-
-        response.on('end', () => {
-            let base64ImageData = imageData.toString('base64');
-            callback(null, base64ImageData);
-        });
-    }).on('error', (error) => {
-        callback(error, null);
+  fetch(api)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.arrayBuffer();
+    })
+    .then((buffer) => {
+      const imageData = Buffer.from(buffer).toString("base64");
+      callback(null, imageData);
+    })
+    .catch((error) => {
+      callback(error, null);
     });
 }

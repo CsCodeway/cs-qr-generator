@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/CsCodeway/cs-qr-generator/issues"
   },
-  "homepage": "https://github.com/CsCodeway/cs-qr-generator#readme"
+  "homepage": "https://github.com/CsCodeway/cs-qr-generator#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
