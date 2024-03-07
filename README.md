@@ -1,16 +1,15 @@
 Example:- 
 
 ```
-import { generateQRCode } from 'cs-qr-generator'
+import { generateQRCode } from "cs-qr-generator";
 
-let search = "google.com";
+const data = "google.com";
 
-generateQRCode(search, (error, imageData) => {
+generateQRCode(data, (error, qrCodeURL) => {
     if (error) {
         console.error('Error generating QR code:', error);
     } else {
-        console.log('QR code image data:', imageData);
+        console.log('QR code URL:', qrCodeURL);
     }
 });
-
 ```
