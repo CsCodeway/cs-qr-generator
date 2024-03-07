@@ -12,7 +12,7 @@ export function generateQRCode(search, callback) {
       const base64ImageData = btoa(
         new Uint8Array(buffer).reduce(
           (data, byte) => data + String.fromCharCode(byte),
-          ''
+          ""
         )
       );
       callback(null, base64ImageData);
