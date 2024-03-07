@@ -1,6 +1,6 @@
 {
   "name": "cs-qr-generator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "cs-qr-generator: your go-to tool for effortless custom qr code creation.",
   "main": "index.js",
   "type": "module",
