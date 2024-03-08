@@ -5,7 +5,7 @@ Javascript
 ```
 
 ```
-import { generateQRCode } from "cs-qr-generator";
+import { generateQRCode } from "csway-qr-generator";
 
 const search = "google.com";
 
@@ -24,7 +24,7 @@ ReactJs
 
 ```
 import { useState } from "react";
-import { generateQRCode } from "cs-qr-generator";
+import { generateQRCode } from "csway-qr-generator";
 
 const QRCodeGenerator = () => {
   const [qrCodeData, setQRCodeData] = useState(null);

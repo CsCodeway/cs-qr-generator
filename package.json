@@ -1,7 +1,7 @@
 {
-  "name": "cs-qr-generator",
+  "name": "csway-qr-generator",
   "version": "1.0.0",
-  "description": "cs-qr-generator: your go-to tool for effortless custom qr code creation.",
+  "description": "csway-qr-generator: your go-to tool for effortless custom qr code creation.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CsCodeway/cs-qr-generator.git"
+    "url": "git+https://github.com/CsCodeway/csway-qr-generator.git"
   },
   "keywords": [
-    "cs-qr-generator",
+    "csway-qr-generator",
     "qr-generator",
     "qr-scanner",
     "CsCodeway"
@@ -20,7 +20,7 @@
   "author": "CsCodeway",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CsCodeway/cs-qr-generator/issues"
+    "url": "https://github.com/CsCodeway/csway-qr-generator/issues"
   },
-  "homepage": "https://github.com/CsCodeway/cs-qr-generator#readme"
+  "homepage": "https://github.com/CsCodeway/csway-qr-generator#readme"
 }
